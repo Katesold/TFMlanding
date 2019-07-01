@@ -251,8 +251,13 @@
     max-width: 290px;
     margin: 20px;
     position: relative;
+    height: 480px;
 }
-
+.package button{
+    position: absolute;
+    bottom: 0;
+    left: 17.5%;
+}
 .package h3{
     color: #5f6dac;
     font-family: 'MB Empire-Book', sans-serif;
@@ -261,6 +266,7 @@
     color: #5f6dac;
     font-family: 'MB Empire-Book', sans-serif;
     padding-bottom: 10px;
+    padding-top: 10px;
 }
 .package ul li::before {
     content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
@@ -271,9 +277,50 @@
     margin-left: -1em; /* Also needed for space (tweak if needed) */
     font-family: Arial;
 }
+#insideUL, #insideUL2{
+    list-style-type: circle;
+    margin-block-start: 0.5em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 10px;
+}
+#insideUL li::before{
+    content: "";
+}
+#insideUL2 li::before{
+    content: "";
+}
 .package ul li{
     padding-left: 10px;
     font-family: 'MB Empire-Book', sans-serif;
+    line-height: 1.1em;
+}
+.TC{
+    font-family: 'MB Empire-Book', sans-serif;
+    padding: 5px;
+    cursor: pointer;
+    width: 170px;
+    color: #5f6dac;
+}
+.TC span{
+    transform: rotate(90deg);
+    display: inline-block;
+    top: 2px;
+    position: relative;
+}
+.terms{
+    /* display: none; */
+    opacity: 0;
+    height: 0;
+    font-size: 0.8em;
+    /* transition-duration: 1s; */
+}
+.termsVis{
+    font-size: 0.8em;
+    /* display: block; */
+    /* opacity: 1; */
+    /* transition-duration: 1s; */
 }
 .aequosImg img{
     width: 100%;
@@ -394,6 +441,12 @@ footer{
     }
     #tfmpurple{
         padding: 60px 20px 0;
+    }
+    .package button{
+        left: 21.5%;
+    }
+    .pkgBtn{
+        margin: 30px auto;
     }
 }
 
