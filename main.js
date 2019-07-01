@@ -23,10 +23,10 @@ function delayGrow(el){
 function package1(){
     terms1.className = "termsVis";
     terms1.style.transitionDuration = '1s';
-    delayGrow(terms1);
+    delayGrow(t[0]);
     terms1.style.opacity = "1";
     terms1.style.height = '200px';
-    t[0].style.height = '650px';
+    // t[0].style.height = '650px';
 }
 
 function package1Off(){
@@ -41,9 +41,9 @@ function package2(){
     terms2.className = "termsVis";
     terms2.style.opacity = "1";
     terms2.style.transitionDuration = '1s';
-    delayGrow(terms2);
+    delayGrow(t[1]);
     terms2.style.height = '180px';
-    t[1].style.height = '690px';
+    // t[1].style.height = '690px';
 }
 
 function package2Off(){
@@ -56,7 +56,7 @@ function package3(){
     terms3.className = "termsVis";
     t[2].style.height = '650px';
     terms3.style.opacity = "1";
-    delayGrow(terms3);
+    delayGrow(t[2]);
     terms3.style.height = '180px';
 }
 function package3Off(){
@@ -130,3 +130,23 @@ tc3.addEventListener('mouseleave', function (){
     // delayShrink(t[2]);
     package3Off();
 });
+
+
+// var collectchat = collectchat || {}; 
+// collectchat.ready = function() {
+//     //Place your code here
+// }
+
+// console.log(collectchat);
+
+// var collectchat = collectchat || {}; 
+// collectchat.ready = function() { 
+//     collectchat.config({
+//         launchMode: 'launcher',
+//         launcherText: 'Hi there, TFM bot here',
+//         showTextAfterClose:false,
+//         avatar: '1x/chatbubb.png',
+//         saveData: true,
+//         openOnLoad: false
+//     });
+// }
