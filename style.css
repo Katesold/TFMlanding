@@ -225,6 +225,7 @@
 .business p{
     font-family: 'MB Empire-Book', sans-serif;
     padding: 10px 0;
+    line-height: 1.2em;
 }
 .prices5G{
     background-color: #5f6dac;
@@ -295,7 +296,7 @@
 .package ul li{
     padding-left: 10px;
     font-family: 'MB Empire-Book', sans-serif;
-    line-height: 1.1em;
+    line-height: 1.15em;
 }
 .TC{
     font-family: 'MB Empire-Book', sans-serif;
